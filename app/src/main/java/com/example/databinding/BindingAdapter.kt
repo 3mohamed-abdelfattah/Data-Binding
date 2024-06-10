@@ -42,3 +42,11 @@ fun setColor(view: View, color: MyColors?) {
         else -> {}
     }
 }
+
+
+@BindingAdapter(value = ["showIfTrue"])
+fun setCustomVisibility(view: View, value: Boolean?) {
+    if (value == true) view.visibility = View.VISIBLE else {
+        view.visibility = View.GONE
+    }
+}
