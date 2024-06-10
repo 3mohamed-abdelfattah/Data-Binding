@@ -16,27 +16,16 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-        <EditText
-            android:id="@+id/text"
-            android:layout_width="match_parent"
+        <Button
+            color="@{viewModel.color}"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="25dp"
-            android:hint="@string/add_text"
-            android:text="@={viewModel.userName}"
+            android:onClick="@{()->viewModel.changeColor()}"
+            android:text="@string/submit"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="25dp"
-            android:onClick="@{()->viewModel.changeData()}"
-            android:text="@string/submit"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">DataBinding</string>
     <string name="add_text">ADD TEXT</string>
-    <string name="submit">Change Data</string>
+    <string name="submit">Change Color</string>
 </resources>

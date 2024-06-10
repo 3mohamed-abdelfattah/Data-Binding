@@ -20,9 +20,9 @@ class MainActivity : AppCompatActivity() {
         binding.viewModel = viewModel
         binding.lifecycleOwner = this
 
-        viewModel.userName.observe(this) {
-            Log.d("TESTTAG", "onCreate: $it")
-        }
+//        viewModel.userName.observe(this) {
+//            Log.d("TEST", "onCreate: $it")
+//        }
 
     }
 
